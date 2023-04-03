@@ -553,6 +553,9 @@ video {
 .top-40 {
   top: 10rem;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .z-0 {
   z-index: 0;
 }
@@ -631,6 +634,15 @@ video {
 }
 .w-\[800px\] {
   width: 800px;
+}
+.w-\[440px\] {
+  width: 440px;
+}
+.w-\[600px\] {
+  width: 600px;
+}
+.w-\[700px\] {
+  width: 700px;
 }
 .max-w-7xl {
   max-width: 80rem;

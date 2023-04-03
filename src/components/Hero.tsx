@@ -4,6 +4,8 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import robot from "@/assets/robot.png";
+import Image from "next/image";
 
 const BackgroundCircles = dynamic(
   () => import("@/components/BackgroundCircles")
@@ -32,10 +34,11 @@ const Hero = () => {
     <div className="flex h-screen flex-col space-y-8 items-center justify-center overflow-hidden">
       <BackgroundCircles />
 
-      <motion.img
-        src="https://cdn.pixabay.com/photo/2023/02/05/20/01/ai-generated-7770474_960_720.png"
-        className="absolute bottom-[164px] h-[440px] cursor-pointer"
+      <Image
+        src={robot}
+        className="absolute bottom-[164px] w-[800px] cursor-pointer"
         onClick={handleShowMessage}
+        alt="robot"
       />
       <motion.div
         initial={{
