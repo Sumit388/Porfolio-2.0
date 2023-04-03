@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 //Assets import
 import robot from "@/assets/robot.png";
 
-
 const BackgroundCircles = dynamic(
   () => import("@/components/BackgroundCircles")
 );
@@ -37,7 +36,6 @@ const Hero = () => {
   return (
     <div className="flex h-screen flex-col space-y-8 items-center justify-center overflow-hidden">
       <BackgroundCircles />
-
       <Image
         src={robot}
         className="absolute bottom-[164px] w-[800px] cursor-pointer"
