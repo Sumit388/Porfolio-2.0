@@ -23,6 +23,8 @@ const About = () => {
         alt=""
         className="h-[580px] w-[580px] absolute left-0 bottom-0"
       />
+      <div className="h-[76vh] w-[70vw] absolute bg-black right-0 bottom-0"></div>
+
     </div>
   );
 };
