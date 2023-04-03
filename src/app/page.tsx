@@ -1,6 +1,6 @@
 // Packages ipmort
 import dynamic from "next/dynamic";
-
+import { Skill } from "@/components/Skill";
 
 // Dynamic import of components
 const Header = dynamic(() => import("@/components/Header"), {
@@ -20,10 +20,12 @@ export default function Home() {
       <section id="hero" className="snap-start h-screen">
         <Hero />
       </section>
-      <section id="hero" className="snap-center">
+      <section id="about" className="snap-center">
         <About/>
       </section>
-      {/* Experience */}
+      <section id="skill" className="snap-center">
+        <Skill/>
+      </section>
       {/* Skill */}
       {/* Projects */}
       {/* Contact me */}
