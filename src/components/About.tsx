@@ -17,17 +17,12 @@ const About = () => {
         >
           About
         </h3>
-        {/* <img
-        src={}
-        className="absolute bottom-[164px] h-[440px] cursor-pointer"
-      /> */}
-        
       </div>
       <Image
-          src={pixarBabyMe}
-          alt=""
-          className="h-[580px] w-[580px] absolute left-0 top-40"
-        />
+        src={pixarBabyMe}
+        alt=""
+        className="h-[580px] w-[580px] absolute left-0 bottom-0"
+      />
     </div>
   );
 };

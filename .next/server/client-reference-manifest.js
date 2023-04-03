@@ -130,6 +130,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./src/assets/robot.png": {
+      "*": {
+        "id": "(sc_client)/./src/assets/robot.png",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/assets/robot.png",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/assets/robot.png",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
@@ -467,6 +493,30 @@ self.__RSC_MANIFEST={
   },
   "/Users/apple/Desktop/Learning/Porfolio-2.0/src/assets/pixarBabyMe.jpg#default": {
     "id": "(app-client)/./src/assets/pixarBabyMe.jpg",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/apple/Desktop/Learning/Porfolio-2.0/src/assets/robot.png": {
+    "id": "(app-client)/./src/assets/robot.png",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/apple/Desktop/Learning/Porfolio-2.0/src/assets/robot.png#": {
+    "id": "(app-client)/./src/assets/robot.png",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/apple/Desktop/Learning/Porfolio-2.0/src/assets/robot.png#default": {
+    "id": "(app-client)/./src/assets/robot.png",
     "chunks": [
       "app/page:app/page"
     ],
