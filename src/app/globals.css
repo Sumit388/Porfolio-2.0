@@ -14,4 +14,14 @@
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     border-radius: 15px;
   }
+  .primaryGradient{
+    background-color: #f7ab0a;
+    background-image: linear-gradient(225deg, #f7ab0a 0%, #af5353 50%, #242424 100%);
+  }
+  .secondaryGradient{
+    background: #304352;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #979796, #242424);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #616161, #242424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
 }
