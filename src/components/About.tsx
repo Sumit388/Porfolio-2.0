@@ -28,11 +28,11 @@ const About = () => {
       <div className="h-[76vh] w-[70vw] absolute right-4 bottom-4 grid grid-rows-6 grid-row-6 gap-4">
         <div className="col-span-6 row-span-1  p-4">
           <div className="uppercase tracking-[20px] text-gray-500">
-            Me in a sentance
+            Me in a sentence
           </div>
           <p>
             I am a software engineer with around one year of working experience
-            in react js. Flex-box is my swiss knife and Next.js is my workhorse.
+            in React.js. Flex-box is my swiss knife and Next.js is my workhorse.
             Oh! and building stuffs that actually solves problems is so fun.
           </p>
         </div>
@@ -74,7 +74,7 @@ const About = () => {
         </div>
         <div className="col-span-4 row-span-2  p-4 border border-[#f7ac0a44]">
           <div className="uppercase tracking-[20px] text-gray-500 mb-2">
-            Relevent experience
+            Relevant experience
           </div>
           <ul>
             <li className="mb-1">I began my work with React JS a year ago.</li>
@@ -83,7 +83,7 @@ const About = () => {
               months.
             </li>
             <li className="mb-1">
-              I have been working freelancer since last 2 months.
+              I have been freelancing for last 2 months.
             </li>
           </ul>
         </div>
@@ -91,7 +91,7 @@ const About = () => {
         If I were a Pixar character, the image on the left is precisely what I would resemble.
         </div>
         <div className="col-span-3 row-span-1  p-4 text-[#8a6d2d]">
-          I made this section so that people would never have to look at my CV again. Therefor I mentioned all the important stuffs here.
+          I made this section so that people would never have to look at my CV again. Therefore, I mentioned all the important stuff here.
         </div>
       </div>
     </div>
