@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .heroButton{
-    @apply md:px-6 px-4 py-2 md:mx-3 mx-1 border border-[#2424242] rounded-full text-xs tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40
+/* Primary theme color
+rgb(36,36,36) or #242424
+ */
+
+/* Secondary theme color 
+rgb(247,171,10) or #f7ab0a
+*/
+
+@layer components {
+  .heroButton {
+    @apply md:px-6 px-4 py-2 md:mx-3 mx-1 border border-[#2424242] rounded-full text-xs tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
   }
 
-  .glassEffect{
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left: 1px solid rgba(255,255,255,0.5);
+  /* Theme effects css */
+  .glassEffect {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
   }
-  .primaryGradient{
-    background-color: #f7ab0a;
-    background-image: linear-gradient(225deg, #f7ab0a 0%, #af5353 50%, #242424 100%);
-  }
-  .secondaryGradient{
-    background: #304352;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #979796, #242424);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #616161, #242424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  .primaryGradient {
+    background-color: #f7ab0a;
+    background-image: linear-gradient(
+      225deg,
+      #f7ab0a 0%,
+      #af5353 50%,
+      #242424 100%
+    );
+  }
+
+  .secondaryGradient {
+    background: #304352; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #979796,
+      #242424
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #616161,
+      #242424
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }

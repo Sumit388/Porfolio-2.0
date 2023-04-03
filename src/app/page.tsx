@@ -1,11 +1,15 @@
-import About from "@/components/About";
+// Packages ipmort
 import dynamic from "next/dynamic";
 
 
+// Dynamic import of components
 const Header = dynamic(() => import("@/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 const Hero = dynamic(() => import("@/components/Hero"), {
+  loading: () => <p>Loading...</p>,
+});
+const About = dynamic(() => import("@/components/About"), {
   loading: () => <p>Loading...</p>,
 });
 

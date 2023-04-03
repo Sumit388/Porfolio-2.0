@@ -1,11 +1,15 @@
 "use client";
+//Packages import
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { useState } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+
+//Assets import
 import robot from "@/assets/robot.png";
-import Image from "next/image";
+
 
 const BackgroundCircles = dynamic(
   () => import("@/components/BackgroundCircles")

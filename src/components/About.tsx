@@ -1,6 +1,8 @@
 "use client";
+//Packages import
 import Image from "next/image";
-import { motion } from "framer-motion";
+
+//Assets import
 import pixarBabyMe from "../assets/pixarBabyMe.jpg";
 
 const About = () => {
