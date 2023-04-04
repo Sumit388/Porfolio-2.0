@@ -94,6 +94,7 @@ const About = () => {
           I made this section so that people would never have to look at my CV again. Therefore, I mentioned all the important stuff here.
         </div>
       </div>
+      <div className="mr-3 w-[80vw] h-1 secondaryGradient z-20 absolute bottom-[0px]"/>
     </div>
   );
 };
