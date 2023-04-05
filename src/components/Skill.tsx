@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import abs from "@/assets/abs.png";
 import { webTechStack, otherTechStack } from "@/constants/Skills";
 
-export const Skill = () => {
+const Skill = () => {
   return (
     <div className="flex h-screen flex-col space-y-8 items-center justify-center overflow-hidden gradient relative ">
       <div
@@ -107,3 +107,5 @@ export const Skill = () => {
     </div>
   );
 };
+
+export default Skill
