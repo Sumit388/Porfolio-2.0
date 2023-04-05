@@ -126,5 +126,16 @@ rgb(247,171,10) or #f7ab0a
     }
   }
 
+  circle{
+    stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
  
 }
