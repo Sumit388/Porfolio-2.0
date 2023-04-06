@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 //Assets import
-import pixarBabyMe from "../assets/pixarBabyMe.jpg";
+import pixarBabyMe from "@/assets/pixarBabyMe.jpg";
 
 const About = () => {
   return (
@@ -61,9 +61,9 @@ const About = () => {
           </ul>
         </div>
         <div className="col-span-2 row-span-2  p-4 flex justify-center items-center">
-        "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." 
-        <br/>
-        - Martin Fowler
+          "Any fool can write code that a computer can understand. Good
+          programmers write code that humans can understand."
+          <br />- Martin Fowler
         </div>
         <div className="col-span-2 row-span-2 primaryGradient p-4">
           <div className="uppercase tracking-[5px] text-[#F7AB0A] mb-1">
@@ -82,19 +82,19 @@ const About = () => {
               Working as a front-end engineer at ASL (Uniacco) since last 6
               months.
             </li>
-            <li className="mb-1">
-              I have been freelancing for last 2 months.
-            </li>
+            <li className="mb-1">I have been freelancing for last 2 months.</li>
           </ul>
         </div>
         <div className="col-span-3 row-span-1 secondaryGradient p-4 text-[#ffffff]">
-        If I were a Pixar character, the image on the left is precisely what I would resemble.
+          If I were a Pixar character, the image on the left is precisely what I
+          would resemble.
         </div>
         <div className="col-span-3 row-span-1  p-4 text-[#8a6d2d]">
-          I made this section so that people would never have to look at my CV again. Therefore, I mentioned all the important stuff here.
+          I made this section so that people would never have to look at my CV
+          again. Therefore, I mentioned all the important stuff here.
         </div>
       </div>
-      <div className="mr-3 w-[80vw] h-1 secondaryGradient z-20 absolute bottom-[0px]"/>
+      <div className="mr-3 w-[80vw] h-1 secondaryGradient z-20 absolute bottom-[0px]" />
     </div>
   );
 };

@@ -1,34 +1,27 @@
 "use client";
-import React from "react";
+//Packages import
 import { useRef } from "react";
+import dynamic from "next/dynamic";
 import { motion, useScroll } from "framer-motion";
-import ProjectSliderCard from "./ProjectSliderCard";
-import ProjectsDescription from "./ProjectsDescription";
+
+//Data import
+import { projects } from "@/constants/ProjectsData";
+
+//Dynamic components import
+const ProjectSliderCard = dynamic(() => import("@/components/ProjectSliderCard"), {
+  loading: () => <p>Loading...</p>,
+});
+
+const ProjectsDescription = dynamic(() => import("@/components/ProjectsDescription"), {
+  loading: () => <p>Loading...</p>,
+});
+
 
 const Projects = () => {
   const ref = useRef(null);
   const { scrollXProgress } = useScroll({ container: ref });
 
-  const data = [
-    {
-      title: "Project 1",
-    },
-    {
-      title: "Project 2",
-    },
-    {
-      title: "Project 3",
-    },
-    {
-      title: "Project 4",
-    },
-    {
-      title: "Project 5",
-    },
-    {
-      title: "Project 6",
-    },
-  ];
+  
   return (
     <div className="h-screen overflow-hidden gradient relative flex ">
       <h3
@@ -67,7 +60,7 @@ const Projects = () => {
               ref={ref}
               className="flex list-none h-screen overflow-x-scroll w-[50vw] flex-shrink-0"
             >
-              {data.map((item, index) => (
+              {projects.map((item, index) => (
                 <li
                   key={index}
                   className="min-w-[46vw] h-screen flex justify-center items-start flex-col mx-[2vw]"
