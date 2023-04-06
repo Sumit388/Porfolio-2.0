@@ -1,6 +1,8 @@
-import React from "react";
+//Package imports
 import Image from "next/image";
-import banner from "../assets/banner.jpeg";
+
+//Assets import
+import banner from "@/assets/banner.jpeg";
 
 function ProjectSliderCard() {
   return (
