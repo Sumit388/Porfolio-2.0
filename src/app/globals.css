@@ -137,5 +137,10 @@ rgb(247,171,10) or #f7ab0a
     display: none;
   }
 
+  .text span{
+    position: relative;
+    display: inline-block;
+  }
+
  
 }

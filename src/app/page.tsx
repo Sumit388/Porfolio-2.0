@@ -17,6 +17,9 @@ const Skill = dynamic(() => import("@/components/Skill"), {
 const Projects = dynamic(() => import("@/components/Projects"), {
   loading: () => <p>Loading...</p>,
 });
+const Contact = dynamic(() => import("@/components/Contact"), {
+  loading: () => <p>Loading...</p>,
+});
 
 export default function Home() {
   return (
@@ -34,7 +37,10 @@ export default function Home() {
       <section id="skill" className="snap-center">
         <Projects/>
       </section>
-      {/* Contact me */}
+      <section id="skill" className="snap-center">
+        <Contact/>
+      </section>
+      
     </div>
   );
 }
