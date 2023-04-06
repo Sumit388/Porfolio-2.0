@@ -3,6 +3,7 @@ import React from "react";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import ProjectSliderCard from "./ProjectSliderCard";
+import ProjectsDescription from "./ProjectsDescription";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -77,7 +78,9 @@ const Projects = () => {
             </ul>
           </>
         </div>
-        <div className="h-[100vh] w-[50vw]"></div>
+        <div className="h-[100vh] w-[50vw] flex justify-center items-end overflow-hidden">
+             <ProjectsDescription />
+        </div> 
       </div>
     </div>
   );
