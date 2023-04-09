@@ -2,28 +2,28 @@
 import dynamic from "next/dynamic";
 
 // Dynamic import of components
-const Header = dynamic(() => import("@/components/Header"), {
+const Header = dynamic(() => import("@/components/portfolio/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const Hero = dynamic(() => import("@/components/Hero"), {
+const Hero = dynamic(() => import("@/components/portfolio/Hero"), {
   loading: () => <p>Loading...</p>,
 });
-const About = dynamic(() => import("@/components/About"), {
+const About = dynamic(() => import("@/components/portfolio/About"), {
   loading: () => <p>Loading...</p>,
 });
-const Skill = dynamic(() => import("@/components/Skill"), {
+const Skill = dynamic(() => import("@/components/portfolio/Skill"), {
   loading: () => <p>Loading...</p>,
 });
-const Projects = dynamic(() => import("@/components/Projects"), {
+const Projects = dynamic(() => import("@/components/portfolio/Projects"), {
   loading: () => <p>Loading...</p>,
 });
-const Contact = dynamic(() => import("@/components/Contact"), {
+const Contact = dynamic(() => import("@/components/portfolio/Contact"), {
   loading: () => <p>Loading...</p>,
 });
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white snap-y snap-mandatory z-0 ">
+    <div className="bg-[rgb(36,36,36)] text-white snap-y snap-mandatory z-0 w-screen overflow-hidden">
       <Header />
       <section id="hero" className="snap-start h-screen">
         <Hero />

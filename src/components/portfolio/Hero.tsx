@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import robot from "@/assets/robot.png";
 
 const BackgroundCircles = dynamic(
-  () => import("@/components/BackgroundCircles")
+  () => import("@/components/portfolio/BackgroundCircles")
 );
 
 const Hero = () => {
@@ -38,7 +38,7 @@ const Hero = () => {
       <BackgroundCircles />
       <Image
         src={robot}
-        className="absolute bottom-[164px] w-[800px] cursor-pointer"
+        className="absolute md:bottom-[164px] md:w-[800px] bottom-[400px] w-[600px] cursor-pointer"
         onClick={handleShowMessage}
         alt="robot"
       />
@@ -56,7 +56,7 @@ const Hero = () => {
         className={
           displayMessage
             ? `w-30 h-24 bg-[#ffffff0c] z-30 
-        text-center p-5 absolute bottom-[300px] left-[840px] glassEffect`
+        text-center p-5 absolute md:bottom-[300px] lg:left-[840px] left-20 bottom-52 glassEffect`
             : "hidden"
         }
       >
@@ -65,18 +65,18 @@ const Hero = () => {
         Happy to have you here.
       </motion.div>
 
-      <div className="mr-3 w-[380px] h-1 bg-[#fff] z-20 absolute bottom-[190px]" />
+      <div className="mr-3 md:w-[380px] h-1 bg-[#fff] z-20 absolute md:bottom-[190px] w-[300px] bottom-[410px] " />
 
-      <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px] absolute bottom-[150px]">
+      <h2 className="text-sm uppercase text-gray-500 pb-2 md:tracking-[15px] tracking-[8px] absolute md:bottom-[150px] bottom-[380px]">
         Software Engineer
       </h2>
 
-      <h1 className=" md:text-4xl text-2xl text-gray-400 z-10 absolute bottom-[100px]">
+      <h1 className=" md:text-4xl text-2xl text-gray-400 z-10 absolute md:bottom-[100px] bottom-[340px]">
         <span>{text}</span>
         <Cursor cursorColor="#F7AB0A" />
       </h1>
 
-      <div className="pt-5 z-20 absolute md:bottom-10 bottom-1">
+      <div className="pt-5 z-20 absolute md:bottom-10 bottom-40">
         <Link href={"/"}>
           <button className="heroButton">About</button>
         </Link>

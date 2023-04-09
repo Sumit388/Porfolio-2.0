@@ -1,5 +1,6 @@
 //Packages import
 import { useState } from 'react';
+import axios from 'axios';
 
 function ContactMeForm() {
   const [name, setName] = useState('');
@@ -8,8 +9,16 @@ function ContactMeForm() {
 
   const handleSubmit = (event:any) => {
     event.preventDefault();
-    // TODO: Submit form data to server
-  };
+    axios.post('http://localhost:5000/api/v1/message', {
+      name,
+      email,
+      message
+    }).then((response) => {
+      console.log(response?.data?.message);
+    }).catch((error) => {
+      console.log(error);
+    })
+  }
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-96 p-10 uppercase text-gray-500 tracking-[10px] ml-2">
