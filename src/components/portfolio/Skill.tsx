@@ -68,7 +68,7 @@ const Skill = () => {
           duration: [10, 0, 10],
           repeat: Infinity,
         }}
-        className="absolute top-[340px] left-0 flex justify-start items-center gap-8 w-[6000px] slider"
+        className="absolute md:top-[340px] top-[400px] left-0 flex justify-start items-center gap-8 w-[6000px] slider"
       >
         {webTechStack.map((item) => (
           <div
