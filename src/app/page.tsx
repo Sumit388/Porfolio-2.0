@@ -23,7 +23,7 @@ const Contact = dynamic(() => import("@/components/portfolio/Contact"), {
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white snap-y snap-mandatory z-0 ">
+    <div className="bg-[rgb(36,36,36)] text-white snap-y snap-mandatory z-0 w-screen overflow-hidden">
       <Header />
       <section id="hero" className="snap-start h-screen">
         <Hero />

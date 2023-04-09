@@ -7,14 +7,14 @@ import pixarBabyMe from "@/assets/pixarBabyMe.jpg";
 
 const About = () => {
   return (
-    <div className="relative">
+    <div className="relative md:h-screen h-[200vh]">
       <div
-        className="h-screen flex flex-col 
+        className=" flex flex-col 
     relative text-center md:text-left md:flex-row 
     max-w-7xl px-10 justify-evenly mx-auto items-center"
       >
         <h3
-          className="absolute top-24 uppercase 
+          className="absolute md:top-24 top-[-70px] uppercase 
       tracking-[20px] text-gray-500 text-2xl"
         >
           About
@@ -23,9 +23,9 @@ const About = () => {
       <Image
         src={pixarBabyMe}
         alt=""
-        className="h-[580px] w-[580px] absolute left-0 bottom-0"
+        className="md:h-[580px] md:w-[580px]  absolute left-0 bottom-0"
       />
-      <div className="h-[76vh] w-[70vw] absolute right-4 bottom-4 grid grid-rows-6 grid-row-6 gap-4">
+      <div className="md:h-[76vh] md:w-[70vw] h-[200vh] w-[100vw] absolute md:right-4 md:bottom-4  md:grid md:grid-rows-6 md:grid-row-6 flex flex-col gap-4">
         <div className="col-span-6 row-span-1  p-4">
           <div className="uppercase tracking-[20px] text-gray-500">
             Me in a sentence
