@@ -22,7 +22,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
 
 export default function CustomCard({color}:{ color:string}) {
   return (
-    <Card sx={{ maxWidth: 260 }}>
+    <Card  className="md:w-[260px] w-[83vw]">
       <CardMedia
         component="img"
         height="194"

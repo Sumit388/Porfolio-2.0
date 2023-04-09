@@ -5,7 +5,7 @@ import CustomBanner from '@/components/blogs/CustomBanner'
 
 function page() {
   return (
-    <div>
+    <div className='w-screen overflow-hidden'>
         <Header/>
         <ButtonBases/>
         <CustomBanner title='Recents' color='#9b27b048'/>
