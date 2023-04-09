@@ -4,10 +4,10 @@
 import dynamic from "next/dynamic";
 
 //Dynamic import of components
- const ContactMeForm = dynamic(() => import("@/components/ContactMeForm"), {
+ const ContactMeForm = dynamic(() => import("@/components/portfolio/ContactMeForm"), {
     loading: () => <p>Loading...</p>,
   });
-  const ScramblingSentence = dynamic(() => import("@/components/ScramblingSentence"), {
+  const ScramblingSentence = dynamic(() => import("@/components/portfolio/ScramblingSentence"), {
     loading: () => <p>Loading...</p>,
   });
 

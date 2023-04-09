@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import robot from "@/assets/robot.png";
 
 const BackgroundCircles = dynamic(
-  () => import("@/components/BackgroundCircles")
+  () => import("@/components/portfolio/BackgroundCircles")
 );
 
 const Hero = () => {

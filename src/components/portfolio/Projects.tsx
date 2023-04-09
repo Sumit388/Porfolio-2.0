@@ -8,11 +8,11 @@ import { motion, useScroll } from "framer-motion";
 import { projects } from "@/constants/ProjectsData";
 
 //Dynamic components import
-const ProjectSliderCard = dynamic(() => import("@/components/ProjectSliderCard"), {
+const ProjectSliderCard = dynamic(() => import("@/components/portfolio/ProjectSliderCard"), {
   loading: () => <p>Loading...</p>,
 });
 
-const ProjectsDescription = dynamic(() => import("@/components/ProjectsDescription"), {
+const ProjectsDescription = dynamic(() => import("@/components/portfolio/ProjectsDescription"), {
   loading: () => <p>Loading...</p>,
 });
 
