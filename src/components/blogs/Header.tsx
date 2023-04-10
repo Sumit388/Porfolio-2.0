@@ -7,18 +7,18 @@ import Fab from "@mui/material/Fab";
 
 function Header() {
   return (
-    <div className="sticky w-screen h-20 flex items-center justify-between  gap-10 p-2">
+    <div className="fixed w-screen h-20 flex items-center justify-between  gap-10 p-2 shadow-md z-50 bg-white">
       <div className="flex items-center justify-start gap-12 p-2">
         <p className="text-[#9c27b0]">Blog Post</p>
         <CustomSearchInput
           label="Search"
-          popupIcon={<FaSearch className="bg-red text-[#9c27b0] text-sm" />}
+          popupIcon={<FaSearch className="bg-red text-[#4294c4] text-sm" />}
         />
       </div>
       <div className="h-20 flex items-center justify-start gap-12 p-2">
-        <Button color="secondary">Portfolio</Button>
-        <Button color="secondary">Contact Me</Button>
-        <Button color="secondary">Log In</Button>
+        <Button className="text-[#4294c4] font-bold tracking-[4px]">Portfolio</Button>
+        <Button className="text-[#4294c4] font-bold tracking-[4px]">Contact Me</Button>
+        <Button className="text-[#4294c4] font-bold tracking-[4px]">Log In</Button>
         <Fab aria-label="like" color="error" size="medium" className=" text-black hover:text-white">
           <FaHeart className="text-2xl" />
         </Fab>

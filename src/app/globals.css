@@ -114,6 +114,14 @@ rgb(247,171,10) or #f7ab0a
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
+  .buttonGradient{
+    background:linear-gradient(to right, #00d0ff7e 0%, #3a7bd5bc 100%);
+  }
+
+  .footerGradient{
+    background:linear-gradient(to right, #cbe8f9 0%, #3a7bd5b7 100%);
+  }
+
   .slider{
     animation: scroll 30s linear infinite;
   }
