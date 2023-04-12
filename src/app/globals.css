@@ -118,13 +118,14 @@ rgb(247,171,10) or #f7ab0a
     background:linear-gradient(to right, #00d0ff7e 0%, #3a7bd5bc 100%);
   }
 
-  .footerGradient{
-    background:linear-gradient(to right, #cbe8f9 0%, #3a7bd5b7 100%);
-  }
-
   .sidebarGradient{
     background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
   }
+
+  .overlayGradient{
+    background:linear-gradient(to right, #000000c2 0%, transparent 100%);
+  }
+  
 
   .slider{
     animation: scroll 30s linear infinite;
@@ -153,5 +154,7 @@ rgb(247,171,10) or #f7ab0a
     position: relative;
     display: inline-block;
   }
- 
+}
+.css-1hxrwmy-MuiButtonBase-root-MuiPaginationItem-root, .css-1hfyor7-MuiPaginationItem-root {
+  color: white;
 }

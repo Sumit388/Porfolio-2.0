@@ -49,7 +49,7 @@ function BrowseFilterSec() {
     },
   ];
   return (
-    <div className="min-h-[54vh] max-h-[90vh] min-w-[300px]  mt-20 mb-10 shadow-2xl rounded-lg sidebarGradient">
+    <div className="min-h-[54vh] max-h-[90vh] min-w-[300px]  mb-10 shadow-2xl rounded-lg glassEffect bg-[#f7ac0a95] text-white">
       <div className="w-full h-20 p-5">
         <CustomAutoComplete
           name="Catagory"

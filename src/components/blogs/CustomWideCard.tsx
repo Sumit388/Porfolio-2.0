@@ -2,15 +2,15 @@ import React from "react";
 
 function CustomWideCard() {
   return (
-    <div className="max-w-sm w-full lg:max-w-[44vw] lg:flex">
+    <div className="max-w-sm w-full lg:max-w-[30vw] lg:flex glassEffect text-[#a7a7a7] overflow-hidden">
       <div
-        className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+        className="h-48 lg:h-auto lg:w-40 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
         style={{backgroundImage: "url('https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')"}}
         title="Woman holding a mug"
       ></div>
-      <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div className=" bg-[#8484842a] rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
         <div className="mb-8">
-          <p className="text-sm text-gray-600 flex items-center">
+          <p className="text-sm text-gray-500 flex items-center">
             <svg
               className="fill-current text-gray-500 w-3 h-3 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -20,10 +20,10 @@ function CustomWideCard() {
             </svg>
             Members only
           </p>
-          <div className="text-gray-900 font-bold text-xl mb-2">
+          <div className=" font-bold text-xl mb-2 text-[#f7ac0a8d]">
             Can coffee make you a better developer?
           </div>
-          <p className="text-gray-700 text-base">
+          <p className=" text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Voluptatibus quia, nulla! Maiores et perferendis eaque,
             exercitationem praesentium nihil.
@@ -36,8 +36,8 @@ function CustomWideCard() {
             alt="Avatar of Jonathan Reinink"
           />
           <div className="text-sm">
-            <p className="text-gray-900 leading-none">Jonathan Reinink</p>
-            <p className="text-gray-600">Aug 18</p>
+            <p className="leading-none">Jonathan Reinink</p>
+            <p className="text-gray-400">Aug 18</p>
           </div>
         </div>
       </div>
