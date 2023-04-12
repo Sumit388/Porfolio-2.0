@@ -43,14 +43,13 @@ function ScramblingSentence() {
       className="p-10 text-gray-500 w-[600px] absolute bottom-2 right-2 text"
       ref={text}
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi
-      minima laudantium dolores, veritatis vitae. Obcaecati perspiciatis et,
-      impedit quibusdam amet illo quidem, rerum, doloribus hic quae unde?
-      Quisquam corrupti quas temporibus voluptatibus animi, quo eligendi? Lorem,
-      ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi minima
-      laudantium dolores, veritatis vitae. Obcaecati perspiciatis et, impedit
-      quibusdam amet illo quidem, rerum, doloribus hic quae unde? Quisquam
-      corrupti quas temporibus voluptatibus animi, quo eligendi?
+      "Thank you for visiting my portfolio! If you're looking for a software
+      developer who is passionate about delivering innovative solutions and
+      exceptional user experiences, you've come to the right place. I am
+      dedicated to bringing your vision to life, and delivering high-quality
+      results that exceed your expectations. Let's collaborate on your next
+      project and make it a success. Please don't hesitate to contact me to
+      discuss how we can work together."
     </div>
   );
 }
