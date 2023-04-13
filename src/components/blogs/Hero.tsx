@@ -12,17 +12,17 @@ function Hero() {
           className="absolute top-0  w-[98vw] h-[50vh] left-0 object-cover"
         />
         <div className="absolute top-0  w-[98vw] h-[50vh] left-0 overlayGradient " />
-        <button className="absolute bottom-10 left-10 primaryGradient px-4 py-1 rounded-2xl shadow-lg font-bold text-3xl text-white">
+        <button className="absolute md:bottom-10 md:left-10 bottom-4 left-4 primaryGradient px-4 py-1 rounded-2xl shadow-lg font-bold text-3xl text-white">
           View
         </button>
-        <div className="absolute top-10 left-10 w-[500px] z-20 text-white">
+        <div className="absolute md:top-10 md:left-10 p-2 md:w-[500px] w-full  z-20 text-white">
           Welcome to DevTunes! I am passionate about Tech & softwares, and I am
           excited to share our knowledge and expertise with you. Our blog is
           your go-to destination for Tech & softwares, where you'll find
           practical tips, insightful analysis, and inspiring stories to help you
           grow and learn. So sit back, grab a cup of coffee, and explore our
           blog. We can't wait to see what you'll discover!
-          <div className="text-4xl uppercase tracking-[36px] mt-10 text-[#f7ab0a] font-extrabold">
+          <div className="text-4xl uppercase md:tracking-[36px] tracking-[10px] mt-10 text-[#f7ab0a] font-extrabold">
             DevTunes
           </div>
         </div>
