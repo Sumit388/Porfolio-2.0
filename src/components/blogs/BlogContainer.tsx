@@ -1,5 +1,6 @@
 import React from 'react'
 import CustomWideCard from './CustomWideCard'
+import CustomBanner from './CustomBanner'
 
 function BlogContainer({title}:{title:string}) {
   return (
@@ -12,6 +13,7 @@ function BlogContainer({title}:{title:string}) {
         <CustomWideCard/>
         <CustomWideCard/>
     </div>
+        <CustomBanner title="Latest" color="#F9A826"/>
     </div>
   )
 }

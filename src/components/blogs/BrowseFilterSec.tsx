@@ -49,7 +49,7 @@ function BrowseFilterSec() {
     },
   ];
   return (
-    <div className="min-h-[54vh] max-h-[90vh] min-w-[300px]  mb-10 shadow-2xl rounded-lg glassEffect bg-[#f7ac0a95] text-white">
+    <div className="md:min-h-[54vh] md:max-h-[90vh] md:min-w-[300px] min-h-[30vh] max-h-[40vh] min-w-[100vw] flex flex-col justify-cent items-start  mb-10 md:shadow-2xl md:rounded-lg md:glassEffect bg-[#f7ac0a95]  text-white">
       <div className="w-full h-20 p-5">
         <CustomAutoComplete
           name="Catagory"
