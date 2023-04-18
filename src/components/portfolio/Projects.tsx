@@ -65,7 +65,7 @@ const Projects = () => {
                   key={index}
                   className="md:min-w-[46vw] h-screen flex justify-center items-start flex-col mx-[2vw]"
                 >
-                  <ProjectSliderCard />
+                  <ProjectSliderCard data={item}/>
                 </li>
               ))}
             </ul>

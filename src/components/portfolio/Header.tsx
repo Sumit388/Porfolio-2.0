@@ -24,26 +24,34 @@ const Header = () => {
       >
         {/* Social Icons */}
         <SocialIcon
-          url="https://linkedin.com/in/jaketrent"
+          target="_blank"
+          url="https://www.linkedin.com/in/sumitmishra388/"
           fgColor="#F7AB0A"
           bgColor="transparent"
         />
-         <SocialIcon
+        <SocialIcon
+          target="_blank"
+          url="https://www.facebook.com/profile.php?id=100004060201078"
           network="facebook"
           fgColor="grey"
           bgColor="transparent"
         />
-         <SocialIcon
+        <SocialIcon
+          target="_blank"
+          url="https://github.com/Sumit388"
           network="github"
           fgColor="#F7AB0A"
           bgColor="transparent"
         />
-         <SocialIcon
+        <SocialIcon
+          target="_blank"
           network="twitter"
           fgColor="grey"
           bgColor="transparent"
         />
-         <SocialIcon
+        <SocialIcon
+          target="_blank"
+          url="https://youtube.com/@sanjh3799"
           network="youtube"
           fgColor="grey"
           bgColor="transparent"
@@ -67,6 +75,8 @@ const Header = () => {
       >
         {/* Contact me section */}
         <SocialIcon
+          url="mailto: sumitmishra388@gmail.com"
+          target="_blank"
           className="cursor-pointer"
           network="email"
           fgColor="#F7AB0A"
