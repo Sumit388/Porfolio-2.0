@@ -1,10 +1,19 @@
 //Package imports
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-//Assets import
-import mario from "@/assets/mario.jpg";
+interface Props {
+  data:{
+    image: string;
+    codeLink: string;
+    deployedLink: string;
+    documenationLink: string;
+    projectName: string;
+    projectDescription: string;
+    techUsed: string;
+}
+}
 
-function ProjectSliderCard() {
+function ProjectSliderCard({data}: Props) {
   return (
     <>
       <div className="h-[49%] overflow-hidden relative flex justify-end items-start flex-col">
@@ -12,16 +21,24 @@ function ProjectSliderCard() {
           {"Scroll right for more projects >"}
         </div>
         <div className="overflow-hidden h-[60%] flex justify-center items-center rounded-xl ">
-          <Image src={mario} alt="" />
+          <img src={data.image}/>
           <div className="bg-gradient-to-t from-[#000000] to-transparent h-[60%] w-full z-20 absolute bottom-0 left-0" />
           <div className="h-[60%] w-full z-20 absolute bottom-2 left-2 flex justify-start items-end gap-4">
-            <button className="border border-[#f7ac0a44] md:px-8 px-2 py-2 rounded-2xl bg-[#24242443] md:uppercase md:tracking-[2px] text-gray-500">
+            <button className="border border-[#f7ac0a44] md:px-8 px-2 py-2 rounded-2xl bg-[#24242443] md:uppercase md:tracking-[2px] text-gray-500" 
+            onClick={() => {
+              window.open(data.codeLink)}}
+            >
               Code Link
             </button>
-            <button className="border border-[#f7ac0a44] md:px-8 px-2 py-2 rounded-2xl bg-[#24242443] md:uppercase md:tracking-[2px] text-gray-500">
+            <button className="border border-[#f7ac0a44] md:px-8 px-2 py-2 rounded-2xl bg-[#24242443] md:uppercase md:tracking-[2px] text-gray-500"
+            onClick={() => {
+              window.open(data.deployedLink)}}
+            >
               Deployed link
             </button>
-            <button className="border border-[#f7ac0a44] md:px-8 px-2 py-2 rounded-2xl bg-[#24242443] md:uppercase md:tracking-[2px] text-gray-500">
+            <button className="border border-[#f7ac0a44] md:px-8 px-2 py-2 rounded-2xl bg-[#24242443] md:uppercase md:tracking-[2px] text-gray-500"
+            onClick={() => {window.open(data.documenationLink)}}
+            >
               Documentation
             </button>
           </div>
@@ -33,13 +50,10 @@ function ProjectSliderCard() {
       <div className="h-[49%] flex justify-start items-start flex-col">
         <div className="h-[50%] flex md:flex-row flex-col justify-start items-center">
           <div className="md:h-[100px] md:min-w-[268px] min-w-screen elevatedEffect slide flex justify-center items-center gap-6 uppercase tracking-[5px] text-gray-500">
-            <p className="p-4 text-center">2D Side-scroller Game</p>
+            <p className="p-4 text-center">{data.projectName}</p>
           </div>
           <div className="md:ml-10 md:w-auto w-screen md:px-auto px-2">
-            "Experience a nostalgic blast from the past with this 2D
-            side-scrolling game, inspired by Super Mario! Developed solely with
-            JavaScript and CSS, it's a true testament to the power and
-            flexibility of web technologies."
+            {data.projectDescription}
           </div>
         </div>
         <div className="h-[46%] glassEffect w-[96%] ml-3 bg-[#ff1e1e0f] flex md:flex-row flex-col justify-start md:items-center items-start p-10 uppercase tracking-[5px] text-gray-500">
@@ -47,7 +61,7 @@ function ProjectSliderCard() {
             <p>Tech used:</p>
           </div>
           <div className="pl-4">
-            CSS, HTML, JavaScript.
+            {data.techUsed}
           </div>
         </div>
       </div>

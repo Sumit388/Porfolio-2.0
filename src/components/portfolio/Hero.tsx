@@ -77,18 +77,18 @@ const Hero = () => {
       </h1>
 
       <div className="pt-5 z-20 absolute md:bottom-10 bottom-40">
-        <Link href="#about" scroll={false}>
+        <a href="#about" >
           <button className="heroButton">About</button>
-        </Link>
-        <Link href="#">
-          <button className="heroButton">Experience</button>
-        </Link>
-        <Link href={"#skills"}>
+        </a>
+        <a href="#skills">
           <button className="heroButton">Skills</button>
-        </Link>
-        <Link href={"#projects"}>
+        </a>
+        <a href="#projects">
           <button className="heroButton">Projects</button>
-        </Link>
+        </a>
+        <a href="#contact">
+          <button className="heroButton">Contact Me</button>
+        </a>
       </div>
     </div>
   );
