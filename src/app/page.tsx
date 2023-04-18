@@ -34,10 +34,10 @@ export default function Home() {
       <section id="skill" className="snap-center">
         <Skill/>
       </section>
-      <section id="skill" className="snap-center">
+      <section id="projects" className="snap-center">
         <Projects/>
       </section>
-      <section id="skill" className="snap-center">
+      <section id="contact" className="snap-center">
         <Contact/>
       </section>
       

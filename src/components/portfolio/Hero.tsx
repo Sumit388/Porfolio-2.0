@@ -77,16 +77,16 @@ const Hero = () => {
       </h1>
 
       <div className="pt-5 z-20 absolute md:bottom-10 bottom-40">
-        <Link href={"/"}>
+        <Link href="#about" scroll={false}>
           <button className="heroButton">About</button>
         </Link>
-        <Link href={"/"}>
+        <Link href="#">
           <button className="heroButton">Experience</button>
         </Link>
-        <Link href={"/"}>
+        <Link href={"#skills"}>
           <button className="heroButton">Skills</button>
         </Link>
-        <Link href={"/"}>
+        <Link href={"#projects"}>
           <button className="heroButton">Projects</button>
         </Link>
       </div>
