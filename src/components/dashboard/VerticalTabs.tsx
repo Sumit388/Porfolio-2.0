@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import MessagesTab from './MessagesTab';
+import UploadBlog from './UploadBlog';
 
 
 
@@ -29,7 +30,7 @@ export default function VerticalTabs() {
         aria-label="visible arrows tabs example"
       >
         <Tab label="message" />
-        <Tab label="item" />
+        <Tab label="Upload blog" />
         <Tab label="Item Three"  />
         <Tab label="Item Four"  />
         <Tab label="Item Five" />
@@ -37,6 +38,7 @@ export default function VerticalTabs() {
         <Tab label="Item Seven" />
       </Tabs>
       {value===0&& <MessagesTab/>}
+      {value===1&& <UploadBlog/>}
     </Box>
   );
 }

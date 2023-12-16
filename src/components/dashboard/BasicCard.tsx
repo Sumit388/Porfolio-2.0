@@ -9,7 +9,7 @@ interface Props {
 }
 export default function BasicCard({ data }: Props) {
   return (
-    <div className="w-[300px] flex flex-col justify-center items-start gap-2 elevatedEffect p-4 bg-slate-100 rounded-lg max-h-[300px]">
+    <div className="w-[300px] flex flex-col justify-center items-start gap-2 shadow-lg p-4 bg-slate-100 rounded-lg max-h-[300px]">
       <div>
         <p>Name: {data.name}</p>
       </div>
